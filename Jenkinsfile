@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        echo "Hello ${MY_NAME}!"
+        echo "Hello ${params.Name}!"
         echo "${TEST_USER_USR}"
         echo "${TEST_USER_PSW}"
         sh 'java -version'
